@@ -1,0 +1,12 @@
+@import url('./site/reset.css');
+@import url('./site/style.css');
+@import url('./site/var.css');
+
+@import url('./site/header.css');
+@import url('./site/projects.css');
+@import url('./site/awards.css');
+@import url('./site/details.css');
+@import url('./site/picters.css');
+@import url('./site/form.css');
+@import url('./site/map.css');
+@import url('./site/footer.css');

@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+     box-sizing: border-box;
+}
+
+body {
+     background-color: var(--body-color);
+     font-family: 'Mulish', sans-serif;
+     color: var(--text-color)
+}
+
+img {
+     display: block;
+}
+
+.container {
+     width: 90%;
+     max-width: 1110px;
+     margin: 0 auto;
+}
+
+.header--blue {
+     color: var(--btn-color)
+}
+
+@media(max-width:632px) {
+     .container {
+          width: 95%;
+     }
+}

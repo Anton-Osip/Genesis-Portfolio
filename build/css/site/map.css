@@ -1,0 +1,8 @@
+.map {
+     height: 570px;
+     margin: 120px 0 150px;
+}
+
+.map__frame {
+     height: 100%;
+}

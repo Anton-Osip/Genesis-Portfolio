@@ -1,0 +1,124 @@
+.col {
+     column-width: 350px;
+     column-gap: 30px;
+     row-gap: 15px;
+     max-width: 1110px;
+     margin: 0 auto 60px;
+}
+
+.img__box {
+     margin-bottom: 30px;
+}
+
+.img__box img {
+     margin: 0 auto;
+}
+
+@media(max-width:1234px) {
+     .col {
+          column-width: 300px;
+     }
+}
+
+@media(max-width:1067px) {
+     .col {
+          column-width: 250px;
+     }
+}
+
+@media(max-width:592px) {
+     .col {
+          column-width: 200px;
+          margin: 0 auto 30px;
+     }
+}
+
+@media(max-width:478px) {
+     .col {
+          column-width: 300px;
+          margin: 0 auto 0px;
+     }
+}
+
+.projects__wrapper {
+     display: grid;
+     grid-template-columns: 4fr 1fr 1fr;
+     grid-column-gap: 70px;
+     margin-bottom: 100px;
+}
+
+.projects__text {
+     grid-row: 1/4;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 38px;
+     color: var(--text-color);
+}
+
+.projects__link {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 23px;
+     color: var(--text-color);
+     opacity: 0.6;
+     text-decoration: none;
+     align-self: center;
+     transition: opacity .3s;
+}
+
+
+.projects__link:hover {
+     opacity: 1;
+}
+
+@media(max-width:1180px) {
+     .projects__wrapper {
+          grid-template-columns: 2fr 1fr;
+          grid-column-gap: 30px;
+          margin-bottom: 80px;
+     }
+
+     .projects__text {
+          grid-row: 1/7;
+     }
+}
+
+@media(max-width:580px) {
+     .projects__wrapper {
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 30px;
+          margin-bottom: 80px;
+     }
+
+     .projects__text {
+          grid-row: 1/2;
+          grid-column: 1/3;
+          text-align: center;
+          margin-bottom: 10px;
+     }
+
+     .projects__link {
+          justify-self: center;
+     }
+}
+
+@media(max-width:386px) {
+     .projects__wrapper {
+          grid-template-columns: 1fr;
+          grid-column-gap: 30px;
+          margin-bottom: 80px;
+     }
+
+     .projects__text {
+          grid-row: 1/2;
+          grid-column: 1/2;
+          text-align: center;
+          margin-bottom: 10px;
+     }
+
+     .projects__link {
+          justify-self: center;
+     }
+}

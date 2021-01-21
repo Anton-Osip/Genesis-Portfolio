@@ -1,0 +1,126 @@
+.form-section {
+     margin-bottom: 10px;
+}
+
+.form__wrapper {
+     display: grid;
+     grid-template-rows: 1fr;
+     grid-template-columns: 1fr 1fr;
+     justify-content: space-between;
+     grid-column-gap: 120px;
+}
+
+.form__info {
+     max-width: 475px;
+     width: 100%;
+}
+
+.form__title {
+     font-style: normal;
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 55px;
+     color: var(--text-color);
+     margin-bottom: 25px;
+     max-width: 435px;
+}
+
+.form__description {
+
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 26px;
+     color: var(--text-color);
+     opacity: 0.8;
+}
+
+.form {
+     max-width: 475px;
+     width: 100%;
+     display: grid;
+     grid-template-rows: 37px 37px 37px 50px;
+     grid-template-columns: 1fr;
+     grid-row-gap: 40px;
+}
+
+.form__fild {
+     position: relative;
+     width: 100%;
+}
+
+.form__lable {
+     font-family: Mulish;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     color: var(--text-color);
+     opacity: 0.6;
+     position: absolute;
+     top: 0;
+     left: 0;
+     transition: opacity .3;
+}
+
+.form__input {
+     border-top: 0px;
+     border-left: 0px;
+     border-right: 0px;
+     border-bottom: 1px solid #97979736;
+     width: 100%;
+     height: 100%;
+     outline: none;
+     font-family: Mulish;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     color: var(--text-color);
+}
+
+.form__input:focus~.form__lable {
+     opacity: 0;
+}
+
+.form__btn {
+     margin-right: auto;
+     padding: 15px 35px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     color: var(--body-color);
+     background: #4A4FF2;
+     border: 0px;
+     outline: none;
+     transition: transform .3s;
+}
+
+.form__btn:active {
+     transform: scale(.9);
+     box-shadow: 0px 10px 10px #4A4FF2;
+}
+
+@media(max-width:768px) {
+     .form__wrapper {
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr;
+          grid-column-gap: 0px;
+          grid-row-gap: 30px;
+     }
+
+     .form__info {
+          max-width: 760px;
+     }
+
+     .form__title {
+          max-width: 760px;
+          text-align: center;
+     }
+
+
+     .form {
+          max-width: 760px;
+     }
+}
